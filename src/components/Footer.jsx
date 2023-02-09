@@ -1,8 +1,10 @@
-const Header = () => {
+import React from "react";
+
+const Footer = () => {
   return (
-    <div className="flex justify-between  py-16 w-full items-center">
-      {/* Left  */}
-      <div className="flex justify-start px-[204px] items-center">
+    <div className="mt-52 flex items-center justify-around w-screen h-[432px] bg-gradient-to-br from-blue-400 to-blue-500">
+      {/* Left */}
+      <div className="ml-2">
         <svg
           width="160"
           height="41"
@@ -20,30 +22,50 @@ const Header = () => {
             fill="white"
           />
         </svg>
+
+        <p className="pt-6 text-lg text-white font-light ml-2">
+          Trafalgar provides progressive, and affordable <br /> healthcare,
+          accessible on mobile and online <br /> for everyone
+        </p>
+
+        <p className="pt-8 text-base text-white font-light ml-2">
+          ©Trafalgar PTY LTD 2020. All rights reserved
+        </p>
       </div>
 
       {/* Right */}
-      <div className="flex flex-1 px-[100px] items-center ml-96">
-        <ul id="nav" className="flex flex-1  items-center justify-evenly list-none text-[18px] text-gray-400" >
-          <li className="hover:text-black cursor-pointer hover:underline ">
-            <a  href="#home">Home</a>
-          </li>
-          <li className="hover:text-black cursor-pointer hover:underline ">
-            <a href="#findadoctor">Find a doctor</a>
-          </li>
-          <li className="hover:text-black cursor-pointer hover:underline ">
-            <a href="#apps">Apps</a>
-          </li>
-          <li className="hover:text-black cursor-pointer hover:underline ">
-            <a href="testimonials">Testimonials</a>     
-          </li>
-          <li className="hover:text-black cursor-pointer hover:underline ">
-            <a href="#aboutus">About Us</a>
-          </li>
+      <div className="flex space-x-44 mt-4">
+        {/* Company */}
+
+        <ul>
+        <h2 className="text-xl font-bold text-white">Company</h2>
+          <li className="pt-6 text-lg text-white">About</li>
+          <li className="pt-6 text-lg text-white">Testimonials</li>
+          <li className="pt-6 text-lg text-white">Find a doctor</li>
+          <li className="pt-6 text-lg text-white">Apps</li>
+        </ul>
+
+        {/* Region */}
+
+        <ul>
+          <h3 className="text-xl font-bold text-white">Region</h3>
+          <li className="pt-6 text-lg text-white">Indonesia</li>
+          <li className="pt-6 text-lg text-white">Singapore</li>
+          <li className="pt-6 text-lg text-white">Hongkong</li>
+          <li className="pt-6 text-lg text-white">Canada</li>
+        </ul>
+
+        {/* Help */}
+        <ul>
+          <h4 className="text-xl font-bold text-white">Help</h4>
+          <li className="pt-6 text-lg text-white">Help Center</li>
+          <li className="pt-6 text-lg text-white">Contact Support</li>
+          <li className="pt-6 text-lg text-white">Instructions</li>
+          <li className="pt-6 text-lg text-white">How it works</li>
         </ul>
       </div>
     </div>
   );
 };
 
-export default Header;
+export default Footer;
